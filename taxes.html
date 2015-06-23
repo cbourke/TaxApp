@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tax Liability Estimate Calculator</title>
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="taxes.js"></script>
+
+  </head>
+  <body>
+
+
+  <div class="container" style="background-color: rgb(200, 200, 200); padding-bottom: 3em;">
+
+    <h1>Tax Liability Estimate Calculator</h1>
+
+      <div class="row" id="resultsDiv">
+      </div>
+
+  <div class="row">
+      <div class="col-md-3"><p>Enter your esimated AGI:</p></div>
+      <div class="col-md-3">$<input type="text" id="agi" value="0"/></div>
+  </div>
+  <div class="row">
+      <div class="col-md-3"><p>Enter number of qualified children:</p></div>
+      <div class="col-md-3">&nbsp;&nbsp;<input type="text" id="numChildren" value="0"/></div>
+  </div>
+  <div class="row">
+      <div class="col-md-6 text-right"><button type="button" class="btn btn-lrg btn-primary" onclick="computeResult()" style="margin-right: .5em;">Calculate</button></div>
+  </div>
+
+  </div>
+
+  </body>
+</html>
+

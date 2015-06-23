@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Grade Calculator</title>
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+    <script src="taxes.js"></script>
+    <script>
+        $(function() {
+        });
+    </script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+  </head>
+  <body>
+
+
+  <div class="container" style="background-color: rgb(240, 240, 230); padding-bottom: 3em;">
+
+    <h1>Grade Calculator</h1>
+
+      <div class="row" id="gradeResultsDiv">
+      </div>
+
+  <div class="row">
+      <div class="col-md-3"><p>Enter your grade:</p></div>
+      <div class="col-md-2"><input type="text" id="grade" value="0"/></div>
+  </div>
+  <div class="row">
+      <div class="col-md-5 text-right"><button type="button" class="btn btn-lrg btn-primary" onclick="computeResult()" style="margin-right: .5em;">Calculate</button></div>
+  </div>
+
+  </div>
+
+  </body>
+</html>
+
