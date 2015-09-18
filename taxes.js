@@ -6,8 +6,8 @@ function calculateTax(agiIncome, numChildren) {
 }
 
 function computeResult() {
-  var income = $("#agi").val();
-  var numberOfChildren = $("#numChildren").val();
+  var income = parseFloat($("#agi").val());
+  var numberOfChildren = parseInt($("#numChildren").val());
   var taxLiability = calculateTax(income, numberOfChildren);
 
   var result = "<div class='col-md-5'> " +
